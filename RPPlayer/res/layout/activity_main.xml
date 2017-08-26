@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.rpplayer.MainActivity" >
+
+    <EditText
+        android:id="@+id/rp_et1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="17dp"
+        android:ems="10" />
+
+    <ImageButton
+        android:id="@+id/rp_ff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/rp_et1"
+        android:layout_below="@+id/rp_et1"
+        android:layout_marginTop="76dp"
+        android:src="@android:drawable/ic_media_ff" />
+
+    <ImageButton
+        android:id="@+id/rp_pl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/rp_ff"
+        android:layout_centerHorizontal="true"
+        android:src="@android:drawable/ic_media_play" />
+
+    <ImageButton
+        android:id="@+id/rp_pa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/rp_pl"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@+id/rp_pl"
+        android:src="@android:drawable/ic_media_pause" />
+
+    <ToggleButton
+        android:id="@+id/rp_tb1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/rp_ff"
+        android:layout_below="@+id/rp_ff"
+        android:layout_marginTop="44dp"
+        android:text="ToggleButton"
+        android:textOn="OFF"
+        android:textOff="ON"/>
+
+    <ImageButton
+        android:id="@+id/rp_st"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/rp_tb1"
+        android:layout_alignLeft="@+id/rp_pl"
+        android:src="@drawable/logout" />
+
+    <SeekBar
+        android:id="@+id/rp_sb1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="30dp" />
+
+</RelativeLayout>

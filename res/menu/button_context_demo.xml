@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.newapp.MenuDemo" >
+
+    <item
+        android:id="@+id/cmi1"
+        
+        android:title="View"/>
+    
+    <item
+        android:id="@+id/cmi2"
+        android:title="Share"/>
+    
+    <item
+        android:id="@+id/cmi3"
+        
+        android:title="Details"/>
+
+</menu>

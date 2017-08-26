@@ -1,0 +1,36 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.newapp.MenuDemo" >
+
+    <item
+        android:id="@+id/omi1"
+        android:showAsAction="always"
+        android:icon="@android:drawable/ic_dialog_info"
+        android:title="About App"/>
+    
+    <item
+        android:id="@+id/omi2"
+        android:icon="@android:drawable/ic_dialog_email"
+        android:title="Setting"/>
+    
+    <item
+        android:id="@+id/omi3"
+        android:showAsAction="always"
+        android:icon="@android:drawable/ic_menu_camera"
+        android:title="Camera"/>
+    
+    <item
+        android:id="@+id/omi4"
+        android:showAsAction="ifRoom"
+        android:icon="@android:drawable/stat_sys_data_bluetooth"
+        android:title="Bluetooth"/>
+    <item
+        android:id="@+id/omi5"
+        android:icon="@android:drawable/ic_partial_secure"
+        android:title="Wi-Fi"/>
+    
+    <item
+        android:id="@+id/omi6"
+        android:title="Exit"/>
+
+</menu>

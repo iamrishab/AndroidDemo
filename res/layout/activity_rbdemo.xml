@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rbd_scr"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.newapp.RBDemo" >
+
+    <TextView
+        android:id="@+id/rbd_tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="47dp"
+        android:text="CHECK BACKGROUND"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <RadioGroup
+        android:id="@+id/rbd_rg1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/rbd_tv1"
+        android:layout_below="@+id/rbd_tv1"
+        android:layout_marginTop="37dp" >
+
+        <RadioButton
+            android:id="@+id/rbd_r1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Yellow" />
+
+        <RadioButton
+            android:id="@+id/rbd_r2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sea Blue" />
+
+        <RadioButton
+            android:id="@+id/rbd_r3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="green" />
+        
+        
+        <RadioButton
+            android:id="@+id/rbd_r4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="grey" />
+        
+        
+        <RadioButton
+            android:id="@+id/rbd_r5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="magenta" />
+        
+        
+        <RadioButton
+            android:id="@+id/rbd_r6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="cyan" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/rbd_bu1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/rbd_rg1"
+        android:layout_below="@+id/rbd_rg1"
+        android:layout_marginTop="45dp"
+        android:text="SET BACK." />
+
+    <Button
+        android:id="@+id/rbd_bu2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/rbd_bu1"
+        android:layout_alignBottom="@+id/rbd_bu1"
+        android:layout_alignRight="@+id/rbd_tv1"
+        android:text="RESET" />
+    
+</RelativeLayout>

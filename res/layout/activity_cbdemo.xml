@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.newapp.CBDemo" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="29dp"
+        android:text="CANTEEN ANDROID APP"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="21dp"
+        android:text="Menu"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <CheckBox
+        android:id="@+id/cbd_c1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="20dp"
+        android:text="Coffee" />
+
+    <CheckBox
+        android:id="@+id/cbd_c2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cbd_c1"
+        android:layout_below="@+id/cbd_c1"
+        android:layout_marginTop="18dp"
+        android:text="Cold Drink" />
+
+    <CheckBox
+        android:id="@+id/cbd_c4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cbd_c2"
+        android:layout_below="@+id/cbd_c2"
+        android:layout_marginTop="26dp"
+        android:text="Maggie" />
+
+    <CheckBox
+        android:id="@+id/cbd_c5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/cbd_c4"
+        android:layout_below="@+id/cbd_c4"
+        android:layout_marginTop="20dp"
+        android:text="Popcorn" />
+
+    <Button
+        android:id="@+id/cbd_b1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/cbd_c2"
+        android:layout_marginRight="30dp"
+        android:text="ORDER" />
+
+    <TextView
+        android:id="@+id/cbd_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_below="@+id/cbd_c5"
+        android:layout_marginTop="17dp"
+        android:text="Order Details:"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>

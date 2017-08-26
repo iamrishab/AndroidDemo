@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/musicanim2"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.newapp.MusicPlayer" >
+
+     <EditText
+        android:id="@+id/mp_et1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47dp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:ems="10" />
+
+    <ImageButton
+        android:id="@+id/mp_ff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/mp_et1"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="57dp"
+        android:src="@android:drawable/ic_media_ff" />
+
+    <ImageButton
+        android:id="@+id/mp_pl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/mp_ff"
+        android:layout_marginLeft="42dp"
+        android:layout_toRightOf="@+id/mp_ff"
+        android:src="@android:drawable/ic_media_play" />
+
+    <ImageButton
+        android:id="@+id/mp_pa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/mp_pl"
+        android:layout_marginRight="18dp"
+        android:src="@android:drawable/ic_media_pause" />
+
+    <Button
+        android:id="@+id/mp_st"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/mp_ff"
+        android:layout_below="@+id/mp_ff"
+        android:layout_marginTop="42dp"
+        android:textColor="#FFFFFF"
+        android:text="STATUS" />
+
+    <Button
+        android:id="@+id/mp_rl"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/mp_pl"
+        android:layout_alignTop="@+id/mp_st"
+        android:textColor="#FFFFFF"
+        android:text="RELEASE" />
+
+    <Button
+        android:id="@+id/mp_rst"
+        android:textColor="#FFFFFF"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/mp_pa"
+        android:layout_alignTop="@+id/mp_rl"
+        android:text="RESET" />
+
+    <Button
+        android:id="@+id/mp_du"
+        android:textColor="#FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mp_st"
+        android:layout_marginTop="54dp"
+        android:layout_toLeftOf="@+id/mp_pl"
+        android:text="DUR." />
+
+    <Button
+        android:id="@+id/mp_cdu"
+        android:textColor="#FFFFFF"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/mp_du"
+        android:layout_alignBottom="@+id/mp_du"
+        android:layout_alignRight="@+id/mp_rl"
+        android:text="CURR. DUR." />
+
+    <SeekBar
+        android:id="@+id/mp_sb1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" />
+
+</RelativeLayout>
